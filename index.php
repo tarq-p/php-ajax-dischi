@@ -16,17 +16,14 @@
         </header>
 
         <div class="cds-container container1">
-
+            <?php
+                include 'data.php';
+             ?>
         </div>
 
 
         <script id="cds-template" type="text/x-handlebars-template">
-            <div class="cd">
-                <img src="{{coverAlbum}}" alt="">
-                <h3>{{album}}</h3>
-                <span class="author">{{singer}}</span>
-                <span class="year">{{year}}</span>
-            </div>
+        
         </script>
 
         <script src="main.js" charset="utf-8"></script>
