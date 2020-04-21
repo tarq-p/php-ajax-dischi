@@ -27,13 +27,13 @@ header {
   background: #000000;
 }
 
-header .container {
+header .container-header {
   width: 1070px;
   height: 100%;
   margin: 0 auto;
 }
 
-header .container #logo {
+header .container-header #logo {
   height: 50px;
   margin-top: 10px;
 }
@@ -53,21 +53,21 @@ header .container #logo {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  flex-basis: 200px;
   padding: 20px;
   margin: 10px 20px;
   height: 360px;
-  background: #2e3a46;
+  width: 360px;
+  background: #FFFFFF;
   text-align: center;
 }
 
 .cds-container .cd .cd img {
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .cds-container .cd .cd h3 {
-  margin: 20px 0;
-  color: white;
+  margin: 20px;
+  color: black;
   font-size: 22px;
   text-transform: uppercase;
 }
