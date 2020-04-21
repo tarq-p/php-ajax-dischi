@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>php-ex-dischi-musicali</title>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="dist/css/app.css">
@@ -15,26 +15,31 @@
             </div>
         </header>
 
-
         <div class="cds-container container">
             <?php include 'data.php'; ?>
+            <?php foreach ($dischi as $key => $disco) {?>
+              <div class="cd">
+                <img src="<?php echo $disco["poster"];?>" alt="">
+                  <h3><?php echo $disco["title"];?></h3>
+                  <span class="author"><?php echo $disco["author"];?></span>
+                  <span class="year"><?php echo $disco["year"];?></span>
+              </div>
+            <?php } ?>
+        </div>
 
-        <?php foreach ($dischi as $key => $disco) {?>
-          <div class="cd">
-            <img src="<?php echo $disco["poster"];?>" alt="">
-              <h3><?php echo $disco["title"];?></h3>
-              <span class="author"><?php echo $disco["author"];?></span>
-              <span class="year"><?php echo $disco["year"];?></span>
-          </div>
-        <?php } ?>
+        <div class="cds-container container1">
 
         </div>
 
         <!-- <script id="cds-template" type="text/x-handlebars-template">
-
+            <div class="cd">
+                <img src={{poster}} alt="">
+                <h3>"{{title}}"</h3>
+                <span class="author">{{author}}</span>
+                <span class="year">{{year}}</span>
+            </div>
         </script> -->
 
         <script src="dist/js/main.js" charset="utf-8"></script>
-
     </body>
 </html>

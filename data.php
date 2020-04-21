@@ -52,4 +52,6 @@
 
     ];
     // var_dump($dischi);
+
+    // echo json_encode($dischi);
 ?>
